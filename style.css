@@ -1,0 +1,582 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text color */
+}
+
+/* Header styles */
+header {
+    background: #580454;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+}
+
+header .logo-container {
+    width: 150px; /* Increased size */
+    height: 150px; /* Increased size */
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo {
+    width: 80%; /* Adjust the size within the container */
+    height: auto;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+header .symbol {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+}
+
+section h2 {
+    color: #580454;
+}
+
+/* Center the Contact Us title */
+#contact h2 {
+    text-align: center;
+}
+
+/* Center the Registration Form Conditions section */
+#registration {
+    text-align: center;
+}
+
+.registration-conditions {
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Style the registration links with icons */
+.registration-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Space above the links */
+}
+
+.register-link a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #580454;
+    font-weight: bold;
+}
+
+.register-link a .register-icon {
+    margin-right: 5px;
+    width: 64px; /* Adjusted size */
+    height: auto;
+}
+
+/* Contact form styles */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #580454;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #580454;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #580454;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background: #7a0576; /* Slightly lighter shade for hover effect */
+}
+
+/* Centering the social media section */
+.social-media-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a {
+    margin: 0 30px; /* Increased space between icons */
+    display: inline-block;
+}
+
+.social-media img {
+    width: 64px; /* Reverted to original size */
+    height: auto;
+}
+
+.social-media a:hover img {
+    opacity: 0.8; /* Slightly fade the icons on hover */
+}
+
+/* Footer styles */
+footer {
+    background: #580454;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+}
+
+/* Add styles for animated circles */
+header .animated-circle {
+    width: 20px; /* Size */
+    height: 20px; /* Size */
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    animation: float 4s infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+/* Position the animated circles */
+header .circle-1 { top: 20px; left: 5%; animation-delay: 0s; }
+header .circle-2 { top: 50px; left: 10%; animation-delay: 0.5s; }
+header .circle-3 { top: 30px; left: 15%; animation-delay: 1s; }
+header .circle-4 { top: 70px; left: 80%; animation-delay: 1.5s; }
+header .circle-5 { top: 100px; left: 85%; animation-delay: 2s; }
+header .circle-6 { top: 120px; left: 90%; animation-delay: 2.5s; }
+header .circle-7 { top: 140px; left: 95%; animation-delay: 3s; }
+header .circle-8 { top: 160px; left: 20%; animation-delay: 3.5s; }
+
+/* Who We Are Section */
+.who-we-are-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.who-we-are-photo {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.who-we-are-text {
+    width: 60%;
+}
+
+.who-we-are-text h2, .who-we-are-text h3 {
+    color: #580454;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .who-we-are-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .who-we-are-photo {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .who-we-are-text {
+        width: 100%;
+    }
+}
+
+/* About Us Section */
+.about-us-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-us-text {
+    width: 50%; /* Adjusted width to make more space for the photo */
+    margin-right: 40px; /* Increased space between text and photo */
+}
+
+.about-us-photo {
+    width: 50%; /* Adjusted width to balance with text */
+    max-width: 400px; /* Increased maximum width for the photo */
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-us-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-us-photo {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .about-us-text {
+        width: 100%;
+    }
+}
+
+/* Responsive adjustments for the registration conditions */
+@media (max-width: 768px) {
+    .registration-conditions {
+        width: 100%;
+    }
+}
+
+/* Upcoming Events styles */
+#upcoming-events {
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+#upcoming-events h2 {
+    text-align: center;
+    color: #580454;
+}
+
+.event-container {
+    display: flex;
+    overflow: hidden;
+    margin-top: 20px;
+    background: #580454;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.event {
+    min-width: 300px;
+    flex: 0 0 auto;
+    background-color: #880674; /* Darker purple for events */
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.event:hover {
+    transform: scale(1.05);
+    animation-play-state: paused; /* Pause animation on hover */
+}
+
+@keyframes slide {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.event-sliding {
+    display: flex;
+    animation: slide 15s linear infinite;
+}
+
+/* Responsive adjustments for the event section */
+@media (max-width: 768px) {
+    .event-container {
+        flex-direction: column;
+    }
+
+    .event {
+        min-width: 100%;
+        margin: 10px 0;
+    }
+}
+/* Members Section */
+#members {
+    text-align: center;
+    padding: 20px;
+}
+
+.members-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 200px; /* Adjust as needed */
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #580454;
+}
+
+.member {
+    flex: 0 0 30%; /* Each member takes 30% of the container width */
+    margin: 0 10px;
+    transition: transform 0.5s;
+}
+
+.member:hover {
+    transform: scale(1.1);
+}
+
+.member-photo-container {
+    width: 100px; /* Adjust the size */
+    height: 100px;
+    background-color: #580454;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.member-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-name {
+    margin-top: 10px;
+    color: #580454;
+    font-weight: bold;
+}
+
+.most-active .member-photo-container {
+    width: 120px; /* Larger size for the most active member */
+    height: 120px;
+}
+
+.members-slider {
+    animation: slide-right-left 10s infinite;
+}
+
+@keyframes slide-right-left {
+    0%, 20% {
+        transform: translateX(0);
+    }
+    25%, 45% {
+        transform: translateX(33%);
+    }
+    50%, 70% {
+        transform: translateX(66%);
+    }
+    75%, 95% {
+        transform: translateX(33%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.members-slider:hover {
+    animation-play-state: paused;
+}
+
+/* Administration Section */
+#administration {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px; /* Add space between sections */
+}
+
+.admin-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 200px; /* Adjust as needed */
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #580454;
+}
+
+.admin {
+    flex: 0 0 30%; /* Each admin takes 30% of the container width */
+    margin: 0 10px;
+    transition: transform 0.5s;
+}
+
+.admin:hover {
+    transform: scale(1.1);
+}
+
+.admin-photo-container {
+    width: 100px; /* Adjust the size */
+    height: 100px;
+    background-color: #580454;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.admin-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.admin-name {
+    margin-top: 10px;
+    color: #580454;
+    font-weight: bold;
+}
+
+.most-active-admin .admin-photo-container {
+    width: 120px; /* Larger size for the leader */
+    height: 120px;
+}
+
+.admin-slider {
+    animation: slide-left-right 10s infinite;
+}
+
+@keyframes slide-left-right {
+    0%, 20% {
+        transform: translateX(0);
+    }
+    25%, 45% {
+        transform: translateX(-33%);
+    }
+    50%, 70% {
+        transform: translateX(-66%);
+    }
+    75%, 95% {
+        transform: translateX(-33%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.admin-slider:hover {
+    animation-play-state: paused;
+}
+
+
+
+#vision {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.vision-text {
+    margin-bottom: 20px;
+}
+
+.vision-text h1 {
+    color: #580454; /* Changed the color to your specified value */
+}
+
+.vision-circles {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.vision-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #9b59b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    animation: pulse 2s infinite, rotateContent 5s linear infinite, changeColor 5s linear infinite;
+    cursor: pointer;
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes rotateContent {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: #9b59b6;
+    }
+    33% {
+        background-color: #8e44ad;
+    }
+    66% {
+        background-color: #7d3c98;
+    }
+    100% {
+        background-color: #9b59b6;
+    }
+}
+
+.vision-circle:hover {
+    animation-play-state: paused;
+    transform: scale(1.2);
+}
